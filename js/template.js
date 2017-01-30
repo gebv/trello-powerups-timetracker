@@ -1,8 +1,10 @@
 
 var getBadges = function (t) {
-    return t.card('name')
-        .get('name')
-        .then(function (cardName) {
+    return t.card('id', 'name')
+        .get('id', 'name')
+        .then(function (cardID, cardName) {
+            console.log(cardID);
+            
             var badgeColor;
             // var icon = GRAY_ICON;
             var lowercaseName = cardName.toLowerCase();
@@ -56,11 +58,9 @@ TrelloPowerUp.initialize({
         });
     },
     'card-badges': function (t, options) {
-        console.log("card-badges")
         return getBadges(t);
     },
     'card-detail-badges': function (t, options) {
-        console.log("card-badges")
         return getBadges(t);
     }
 })
