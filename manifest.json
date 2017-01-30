@@ -4,7 +4,9 @@
   "details": "Time tracker [this repository](https://github.com/gebv/trello-powerups-timetracker).",
   "author": "GEBV",
   "capabilities": [
-    "show-settings"
+    "show-settings",
+    "card-badges",
+    "card-detail-badges"
   ],
   "icon": {
     "url": "./img/logo.png"
