@@ -8,7 +8,7 @@
   ],
   "connectors": {
     "iframe": {
-      "url": ""
+      "url": "./index.html"
     }
   },
   "recommend": {
