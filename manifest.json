@@ -6,6 +6,9 @@
   "capabilities": [
     "show-settings"
   ],
+  "icon": {
+    "url": "./img/logo.png"
+  },
   "connectors": {
     "iframe": {
       "url": "./index.html"
