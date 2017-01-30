@@ -1,0 +1,17 @@
+{
+  "name": "TimeTracker",
+  "description": "",
+  "details": "Time tracker [this repository](https://github.com/gebv/trello-powerups-timetracker).",
+  "author": "GEBV",
+  "capabilities": [
+    "show-settings"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": ""
+    }
+  },
+  "recommend": {
+    "urls": []
+  }
+}
