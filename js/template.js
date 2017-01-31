@@ -1,10 +1,20 @@
 
+
 var getBadges = function (t) {
     return t.card('id', 'name')
         .get('id', 'name')
         .then(function (cardID, cardName) {
-            console.log(cardID);
-            
+            t.board('id').get('id').then(function(boardID) {
+                console.log("board ID", boardID);
+                Trello.get(
+                    '/boards/Ht1K22eT/actions?filter=updateCard', 
+                    function(msg){
+                        console.log(msg);
+                    }, 
+                    function(msg){}, 
+                );
+            })
+
             var badgeColor;
             // var icon = GRAY_ICON;
             var lowercaseName = cardName.toLowerCase();
