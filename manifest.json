@@ -4,15 +4,11 @@
   "details": "Time tracker [this repository](https://github.com/gebv/trello-powerups-timetracker).",
   "author": "GEBV",
   "capabilities": [
-    "attachment-sections",
-    "attachment-thumbnail",
     "board-buttons",
     "callback",
     "card-badges",
     "card-buttons",
     "card-detail-badges",
-    "card-from-url",
-    "format-url",
     "show-settings"
   ],
   "icon": {
@@ -24,6 +20,9 @@
     }
   },
   "recommend": {
-    "urls": []
+    "urls": [
+      "https://api.trello.com/*",
+      "https://code.jquery.com/jquery-1.7.1.min.js"
+    ]
   }
 }
